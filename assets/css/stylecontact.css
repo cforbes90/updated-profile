@@ -1,0 +1,30 @@
+body{
+    background: white;
+}
+
+
+}
+.top {
+
+}
+.label {
+color: black;
+display: block;
+width: 600px; 
+}
+.container {
+    width: 960px;
+
+}
+h1 {
+    border-bottom: 2px solid gray;
+    color: #4aaaa5;
+}
+
+.placeholder {
+    width: 600px;
+}
+
+.background{
+        background-color: white;
+}

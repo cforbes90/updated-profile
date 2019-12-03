@@ -1,0 +1,390 @@
+/* Special Media Query Sauce   */
+
+@media (max-width: 980px) {
+	.nav-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.main-header {
+		width: 60%;
+		margin: 100px auto 0 20px;
+	}
+
+	.container {
+		width: 60%;
+		margin: 0 auto 85px 20px;
+		min-height: auto;
+	}
+
+	.portfolio-footer {
+		position: fixed;
+	}
+
+	.portfolio-units {
+		padding: 0;
+		height: auto;
+		width: calc(50% - 40px);
+	}
+
+	.portfolio-units img {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 780px) {
+	.nav-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.main-header {
+		width: 90%;
+		margin: 100px auto 0 auto;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto 85px auto;
+		min-height: auto;
+	}
+
+	.portfolio-footer {
+		position: fixed;
+	}
+
+	.portfolio-units {
+		padding: 0;
+		height: auto;
+		width: calc(50% - 40px);
+	}
+
+	.portfolio-units img {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 640px) {
+	/* Index CSS with smallest media query */
+
+	nav {
+		padding: 0;
+		position: static;
+	}
+
+	.nav-container {
+		width: 100%;
+		margin: 0 auto;
+		overflow: auto;
+		position: relative;
+	}
+
+	.name-box {
+		background: #4aaaa5;
+		text-align: center;
+		width: 100%;
+		padding: 20px;
+		margin: 0;
+		display: block;
+		position: static;
+	}
+
+	.name-box h1 {
+		color: #ffffff;
+	}
+
+	.menu-box {
+		width: 100%;
+		margin: 20px auto;
+		padding: 0;
+		display: block;
+		position: static;
+		text-align: center;
+	}
+
+	.menu-box a,
+	.menu-box span {
+		display: inline-block;
+		float: none;
+		color: #777777;
+	}
+
+	.main-header {
+		width: 90%;
+		margin: 16px auto 0 auto;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto 15px auto;
+		min-height: auto;
+	}
+
+	.container img {
+		display: block;
+		width: 100%;
+		margin: 0 auto 15px auto;
+	}
+
+	.portfolio-footer {
+		position: static;
+	}
+
+	/* Portfolio CSS with smallest media query  */
+	/* Portfolio CSS with smallest media query  */
+	/* Portfolio CSS with smallest media query  */
+
+	.portfolio-units {
+		margin: 20px auto;
+		padding: 0;
+		height: auto;
+		width: 100%;
+	}
+
+	.portfolio-units:hover {
+		z-index: 0;
+		transform: none;
+	}
+
+	.portfolio-units img {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-image: url("../assets/images/gray.png");
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 1.5em;
+	color: #4aaaa5;
+}
+
+nav {
+	clear: both;
+	overflow: auto;
+	background: #ffffff;
+	width: 100%;
+	border: none;
+	padding: 20px 0 0 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.nav-container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	position: relative;
+}
+
+.name-box {
+	background: #4aaaa5;
+	text-align: center;
+	width: 200px;
+	padding: 20px;
+	margin: 0;
+	float: left;
+}
+
+.name-box h1 {
+	color: #ffffff;
+}
+
+.menu-box {
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-bottom: 20px;
+}
+
+.menu-box a,
+.menu-box span {
+	display: block;
+	float: left;
+	color: #777777;
+}
+
+.menu-box a {
+	text-decoration: none;
+	padding-right: 10px;
+	margin-right: 10px;
+	transition-duration: 3s;
+}
+
+.menu-box span {
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.menu-box a:hover {
+	border-right: none;
+	color: #000000;
+	/* This is super cool.  */
+	transform: scale(1.25) translateY(0px) translateX(0px);
+	z-index: 1;
+}
+
+#last-menu-item {
+	border-right: none;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.main-header {
+	background: #ffffff;
+	width: 960px;
+	border: 2px solid #dddddd;
+	border-bottom: none;
+	margin: 100px auto 0 auto;
+	padding: 30px;
+	padding-bottom: 0px;
+}
+
+.main-header h1 {
+	border-bottom: 2px solid #cccccc;
+	padding-bottom: 20px;
+}
+
+.container {
+	overflow: auto;
+	background: #ffffff;
+	width: 960px;
+	border: 2px solid #dddddd;
+	border-top: none;
+	margin: 0 auto 15px auto;
+	padding: 30px;
+	min-height: calc(100vh - 170px);
+}
+
+.container h1 {
+	clear: both;
+	border-bottom: 2px solid #cccccc;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.container img {
+	float: left;
+	width: 200px;
+	margin: 0px 20px 20px 0;
+	padding: 0;
+}
+
+.container p {
+	line-height: 24px;
+	margin-bottom: 18px;
+}
+
+/* Portfolio Page CSS */
+/* Portfolio Page CSS */
+/* Portfolio Page CSS */
+
+.portfolio-units {
+	float: left;
+	overflow: hidden;
+	margin: 20px;
+	padding: 0;
+	height: 250px;
+	width: calc(33% - 40px);
+	border: 1px solid #4aaaa5;
+	border-radius: 5px;
+	position: relative;
+	transition-duration: 3s;
+}
+
+.portfolio-units:hover {
+	z-index: 1;
+	border-radius: 20px;
+	border-width: 4px;
+	border-color: #7fff0d;
+	/* width: calc(40% - 40px); */
+	/* This is super cool.  I wish there was a way of building in a delay...*/
+	transform: scale(1.2) translateX(0px) translateY(0px);
+}
+
+.portfolio-units h2 {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	width: 100%;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.portfolio-units img {
+	width: 100%;
+	margin: 0 auto;
+}
+/* Contact Page CSS*/
+/* Contact Page CSS*/
+/* Contact Page CSS */
+
+.contact-form {
+	color: #777777;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+	display: block;
+}
+
+.contact-form label {
+	margin-top: 20px;
+	margin-bottom: .25em;
+}
+.contact-form input,
+.contact-form textarea {
+	font-size: 1em;
+	padding: 1em 1em;
+	width: 100%;
+	border: 1px solid #cccccc;
+}
+
+.contact-form textarea {
+	height: 200px;
+}
+
+.contact-form .button {
+	background: #4aaaa5;
+	background-image: linear-gradient(90deg, #4aaaa5, #359b94);
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	width: 25%;
+	margin: 20px 0;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.portfolio-footer {
+	clear: both;
+	text-align: center;
+	background-color: #666666;
+	border-top: 5px solid #4aaaa5;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	color: white;
+	height: 65px;
+	width: 100%;
+	/* So much to learn.... */
+	position: sticky;
+	bottom: 0;
+}
